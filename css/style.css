@@ -117,6 +117,92 @@ body{
     line-height: 28px;
     margin: 0;
 }
+/*projects*/
+.projects{
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
+}
+.projects-slide{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.project-text{
+    flex-wrap: wrap;
+    display: flex;
+    flex-basis: 60%;
+    right: 0;  
+}
+.project-title{
+    flex-basis: 100%;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 41px;
+}
+.project-image{
+    left:0;
+	z-index:1;
+}
+.project-icon{
+    margin-right: 16px;
+}
+.project-time, .project-cost{
+    flex-basis: 50%;
+    margin-bottom: 44px;
+}
+.project-time, .project-cost, .project-feedback{
+    display: flex;
+    align-items: flex-start;
+}
+.project-subtitle{
+    margin: 0;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+.project-paragraf{
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+.projects-bullet{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #FFBB01;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.projects-bullet-active{
+    background-color: #FFBB01;
+}
+.projects-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 44px;
+}
+.slide-content{
+    position: absolute;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    left:0;
+    z-index:2;
+    width:36%;
+    height:87%;
+    background-color:rgba(232, 69, 69, .9);
+    opacity:0;
+    transition: opacity .2 linear;
+    top: 0;
+}
+.projects-slide:hover .slide-content{
+    opacity: 1;
+}
 /* contacts */
 .contacts-block{
     display: flex;
@@ -142,8 +228,8 @@ body{
     margin: 0;
     margin-bottom: 29px;
 }
-input{
-    background: #a18d8d;
+.input{
+    background: #f8f8f8;
     border:none;
     box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
     border-radius: 5px;
